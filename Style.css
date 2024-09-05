@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root{
+     --Cyan: hsl(171, 66%, 44%);
+     --Blue: hsl(233, 100%, 69%);
+    --white:#fff
+     --GrayishBlue: hsl(210, 10%, 33%);
+     --GrayishBlue: hsl(201, 11%, 66%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    Font-size: 18px;
+
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: "Bai Jamjuree", sans-serif;
+}
+/* Start global rules */
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+.heading{ 
+    width:90%;
+    text-align: center;
+    margin:0 auto 30px;
+}
+.heading h2{font-size: 35px;
+color:var(--drak-gray) ;
+margin:0 0 15px 0 ;}
+.heading p{color: var(--GrayishBlue);}
+
+
+/* End global rule */
+
+/* star-header */
+header{ width: 100%;
+height: 100vh;
+background-image:url("./images/bg-header-desktop.png") ;
+background-repeat: none;
+background-position: center;
+background-size: cover;}
+header .container, 
+.info .container{ 
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+header .container img{
+    width: 100px;
+    align-self: center;
+}
+header .container h1,
+.info.container h1 {
+    font-size: 45px;
+    color:var(--drak-gray) ;
+}
+header .container .actions,
+.info .container .actions{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+header .container p,
+.info .container p{ 
+    width: 70%;
+    margin: 0 auto;
+    color: var(--GrayishBlue);
+}
+header .container .actions .btn,
+.info .container .actions .btn{
+    width: 48%;
+    border: none;
+    border-radius: 25px;
+    padding: 20px;
+    color: var(--white);
+    font-size: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+header .container .actions .btn:hover,
+.info .container .actions .btn:hover{
+transform: scale(1.1);
+}
+header .container .actions .btn-ios, 
+.info .container .actions .btn-ios{ 
+    box-shadow: 5px 5px 5px var(--Cyan);
+    background-color: var(--Cyan);
+}
+header .container .actions .btn-mac,
+.info .container .actions .btn-mac {    box-shadow: 5px 5px 5px var(--Blue);
+    background-color: var(--Blue);}
+/* End-header */
+/* Start snippets */
+.snippets{
+padding: 50 0;
+}
+.snippets .row{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.snippets .image{    height: 500px;
+    width: 50%;
+
+}
+.snippets .image img{    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;    POSITION: relative;
+    margin-left: -20px;
+
+}
+.snippets .text{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.snippets .text li{padding: 0 15px 0 0;
+    margin-bottom: 20px;
+
+}
+.snippets .text h3{
+    color: var(--drak-gray);
+margin-bottom: 10px;
+
+}
+.snippets .text  p{color: var(--GrayishBlue);
+
+}
+/* End snippets */
+
+/* Start gallery */
+.gallery{
+    padding: 50px 0;
+}
+.gallery .image{
+    width: 500PX;
+    text-align: center;
+    margin: 0 auto;
+}
+.gallery .image img{ width: 100%;
+    max-width: 100%;}
+
+/* End gallery */
+
+/* Start workflow */
+.workflow{padding: 50px 0;
+}
+.workflow .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.workflow .container .box{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    height:250px ;
+    width:300px ;
+    text-align: center;
+}
+.workflow .container .box img{
+    height: 30%;
+}
+.workflow .container .box h3{ 
+    height: 15%;
+    color: var(--drak-gray);
+}
+.workflow .container .box p{
+    color: var(--GrayishBlue);
+    height: 40%;
+}
+/* End workflow */
+/* Start brands */
+.brands{padding: 50px 0;}
+.brands .container{ 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.brands .container img{
+    width: 165px;
+    max-width: 100%;
+}
+/* End brands */
+/* Start info */
+.info{
+    padding: 50px o;
+    height: 350px;
+}
+/* End info */
+/* Start footer */
+footer{padding: 50px 0;
+background-color: #eee;}
+footer .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer .container >img {
+    width: 60px;
+    height: 60px;
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+footer .container .links { 
+    width: 500px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+
+}
+footer .container .links li {width: fit-content;}
+footer .container .links a {color: var(--drak-gray);
+margin: 15px 0;}
+footer .container .social{  width:200px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 15px 0;}
+footer .container .social li a img{
+    width: 30px;
+    height: 30px;
+    max-width: 100%;
+}
+/* End footer */
